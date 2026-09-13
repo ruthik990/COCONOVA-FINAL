@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Orders | COCONOVA</title>
+
+
+    <!-- MAIN CSS -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- MY ORDERS CSS -->
+
+    <link
+        rel="stylesheet"
+        href="my-orders.css"
+    >
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- FONT AWESOME -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ======================================
+         NAVBAR
+    ======================================= -->
+
+    <header class="navbar">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            🌴 COCONOVA
+
+        </a>
+
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+
+            <a href="shop.html">
+                Shop
+            </a>
+
+
+            <a href="shop.html?category=machines">
+                Machines
+            </a>
+
+
+            <a href="index.html#about">
+                About
+            </a>
+
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </nav>
+
+
+
+        <!-- NAV ACTIONS -->
+
+        <div class="nav-actions">
+
+
+            <!-- MY ACCOUNT -->
+
+            <a
+                href="my-account.html"
+                class="icon-btn"
+                title="My Account"
+            >
+
+                <i class="fa-solid fa-user"></i>
+
+            </a>
+
+
+
+            <!-- CART -->
+
+            <a
+                href="cart.html"
+                class="icon-btn cart-btn"
+                title="Shopping Cart"
+            >
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+
+                <span class="cart-count">
+
+                    0
+
+                </span>
+
+            </a>
+
+
+        </div>
+
+
+    </header>
+
+
+
+    <!-- ======================================
+         MY ORDERS HERO
+    ======================================= -->
+
+    <section class="my-orders-hero">
+
+
+        <div class="my-orders-hero-content">
+
+
+            <p class="section-tag">
+
+                YOUR PURCHASE HISTORY
+
+            </p>
+
+
+            <h1>
+
+                My Orders
+
+            </h1>
+
+
+            <p>
+
+                Track your orders and view their latest status.
+
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ======================================
+         MY ORDERS SECTION
+    ======================================= -->
+
+    <section class="my-orders-section">
+
+
+        <div class="my-orders-container">
+
+
+            <!-- SECTION HEADER -->
+
+            <div class="orders-page-header">
+
+
+                <div>
+
+
+                    <h2>
+
+                        Your Orders
+
+                    </h2>
+
+
+                    <p>
+
+                        Here are all the orders you have placed with COCONOVA.
+
+                    </p>
+
+
+                </div>
+
+
+                <!-- ORDER COUNT -->
+
+                <div
+                    class="orders-count"
+                    id="ordersCount"
+                >
+
+                    0 Orders
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ==================================
+                 LOADING STATE
+            =================================== -->
+
+            <div
+                class="orders-loading"
+                id="ordersLoading"
+            >
+
+
+                <i class="fa-solid fa-spinner"></i>
+
+
+                <p>
+
+                    Loading your orders...
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- ==================================
+                 ORDERS CONTAINER
+
+                 JavaScript loads orders here
+            =================================== -->
+
+            <div
+                class="customer-orders-container"
+                id="customerOrdersContainer"
+            >
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ======================================
+         FOOTER
+    ======================================= -->
+
+    <footer>
+
+
+        <div class="footer-bottom">
+
+
+            <p>
+
+                © 2026 COCONOVA.
+                All Rights Reserved.
+
+            </p>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- ======================================
+         JAVASCRIPT
+    ======================================= -->
+
+    <script
+        type="module"
+        src="my-orders.js"
+    ></script>
+
+
+</body>
+
+</html>

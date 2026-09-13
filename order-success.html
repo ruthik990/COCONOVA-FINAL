@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Order Successful | COCONOVA</title>
+
+
+    <!-- MAIN CSS -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- FONT AWESOME -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+
+    <style>
+
+        /* ============================= */
+        /* SUCCESS PAGE */
+        /* ============================= */
+
+        .success-page {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 40px 20px;
+
+            background: #f7f3eb;
+
+        }
+
+
+        /* ============================= */
+        /* SUCCESS CARD */
+        /* ============================= */
+
+        .success-card {
+
+            background: white;
+
+            max-width: 600px;
+
+            width: 100%;
+
+            padding: 50px;
+
+            text-align: center;
+
+            border: 1px solid #e5ddd0;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 15px 40px
+                rgba(0, 0, 0, 0.08);
+
+        }
+
+
+        /* ============================= */
+        /* SUCCESS ICON */
+        /* ============================= */
+
+        .success-icon {
+
+            width: 85px;
+
+            height: 85px;
+
+            margin:
+                0 auto
+                25px;
+
+            border-radius: 50%;
+
+            background: #3d5a40;
+
+            color: white;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 38px;
+
+        }
+
+
+        /* ============================= */
+        /* HEADING */
+        /* ============================= */
+
+        .success-card h1 {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            color: #3d5a40;
+
+            font-size: 42px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        /* ============================= */
+        /* TEXT */
+        /* ============================= */
+
+        .success-card p {
+
+            color: #6a5a4d;
+
+            line-height: 1.7;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        /* ============================= */
+        /* ORDER DETAILS BOX */
+        /* ============================= */
+
+        .order-details {
+
+            background: #f7f3eb;
+
+            padding: 22px;
+
+            margin:
+                30px 0;
+
+            border-radius: 8px;
+
+            text-align: left;
+
+        }
+
+
+        .order-row {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            padding:
+                10px 0;
+
+            border-bottom:
+                1px solid #e5ddd0;
+
+            color: #6a5a4d;
+
+        }
+
+
+        .order-row:last-child {
+
+            border-bottom: none;
+
+        }
+
+
+        .order-row strong {
+
+            color: #3d5a40;
+
+        }
+
+
+        /* ============================= */
+        /* STATUS */
+        /* ============================= */
+
+        .order-status {
+
+            display: inline-block;
+
+            padding:
+                7px 15px;
+
+            background: #fff3cd;
+
+            color: #856404;
+
+            border-radius: 20px;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+        }
+
+
+        /* ============================= */
+        /* BUTTONS */
+        /* ============================= */
+
+        .success-buttons {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+            margin-top: 25px;
+
+        }
+
+
+        .success-btn {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 8px;
+
+            padding:
+                13px 25px;
+
+            border-radius: 6px;
+
+            text-decoration: none;
+
+            font-family:
+                "Poppins",
+                sans-serif;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+
+        }
+
+
+        .home-btn {
+
+            background: #3d5a40;
+
+            color: white;
+
+        }
+
+
+        .home-btn:hover {
+
+            background: #2e4631;
+
+            transform:
+                translateY(-2px);
+
+        }
+
+
+        .shop-btn {
+
+            border:
+                1px solid #3d5a40;
+
+            color: #3d5a40;
+
+            background: white;
+
+        }
+
+
+        .shop-btn:hover {
+
+            background: #f7f3eb;
+
+        }
+
+
+        /* ============================= */
+        /* MOBILE */
+        /* ============================= */
+
+        @media (max-width: 600px) {
+
+            .success-card {
+
+                padding:
+                    35px 22px;
+
+            }
+
+
+            .success-card h1 {
+
+                font-size: 32px;
+
+            }
+
+
+            .order-row {
+
+                flex-direction: column;
+
+                gap: 3px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ============================= -->
+    <!-- SUCCESS PAGE -->
+    <!-- ============================= -->
+
+    <section class="success-page">
+
+
+        <div class="success-card">
+
+
+            <!-- SUCCESS ICON -->
+
+            <div class="success-icon">
+
+                <i class="fa-solid fa-check"></i>
+
+            </div>
+
+
+            <!-- TITLE -->
+
+            <h1>
+
+                Order Successful!
+
+            </h1>
+
+
+            <!-- MESSAGE -->
+
+            <p>
+
+                Thank you for choosing
+                <strong>COCONOVA</strong>.
+
+                Your order has been received
+                successfully.
+
+            </p>
+
+
+            <!-- ============================= -->
+            <!-- ORDER DETAILS -->
+            <!-- ============================= -->
+
+            <div
+                class="order-details"
+                id="orderDetails"
+            >
+
+                Loading order details...
+
+            </div>
+
+
+            <!-- MESSAGE -->
+
+            <p>
+
+                We will process your order soon.
+
+                You can check your order status
+                from your account.
+
+            </p>
+
+
+            <!-- ============================= -->
+            <!-- BUTTONS -->
+            <!-- ============================= -->
+
+            <div class="success-buttons">
+
+
+                <a
+                    href="index.html"
+                    class="success-btn home-btn"
+                >
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Back to Home
+
+                </a>
+
+
+                <a
+                    href="shop.html"
+                    class="success-btn shop-btn"
+                >
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                    Continue Shopping
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================= -->
+
+    <script>
+
+
+        // =====================================
+        // GET LAST ORDER
+        // =====================================
+
+        const lastOrder = JSON.parse(
+
+            localStorage.getItem(
+                "lastCOCONOVAOrder"
+            )
+
+        );
+
+
+        const orderDetails =
+
+            document.getElementById(
+                "orderDetails"
+            );
+
+
+        // =====================================
+        // DISPLAY ORDER
+        // =====================================
+
+        if (lastOrder) {
+
+
+            orderDetails.innerHTML = `
+
+
+                <div class="order-row">
+
+                    <span>
+
+                        Order Number
+
+                    </span>
+
+
+                    <strong>
+
+                        ${lastOrder.orderNumber}
+
+                    </strong>
+
+                </div>
+
+
+                <div class="order-row">
+
+                    <span>
+
+                        Total Amount
+
+                    </span>
+
+
+                    <strong>
+
+                        ₹${Number(
+                            lastOrder.total
+                        ).toLocaleString()}
+
+                    </strong>
+
+                </div>
+
+
+                <div class="order-row">
+
+                    <span>
+
+                        Payment Method
+
+                    </span>
+
+
+                    <strong>
+
+                        ${lastOrder.paymentMethod}
+
+                    </strong>
+
+                </div>
+
+
+                <div class="order-row">
+
+                    <span>
+
+                        Order Status
+
+                    </span>
+
+
+                    <span
+                        class="order-status"
+                    >
+
+                        ${lastOrder.status}
+
+                    </span>
+
+                </div>
+
+
+            `;
+
+
+        }
+
+
+        // =====================================
+        // ORDER NOT FOUND
+        // =====================================
+
+        else {
+
+
+            orderDetails.innerHTML = `
+
+
+                <div
+                    style="
+                        text-align: center;
+                        color: #6a5a4d;
+                    "
+                >
+
+                    <i
+                        class="fa-solid fa-circle-info"
+                        style="
+                            font-size: 28px;
+                            margin-bottom: 10px;
+                            color: #7a4e2d;
+                        "
+                    ></i>
+
+
+                    <p>
+
+                        Order details could not
+                        be found.
+
+                    </p>
+
+
+                    <a
+                        href="shop.html"
+                        style="
+                            color: #3d5a40;
+                            font-weight: 600;
+                        "
+                    >
+
+                        Go to Shop
+
+                    </a>
+
+
+                </div>
+
+
+            `;
+
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

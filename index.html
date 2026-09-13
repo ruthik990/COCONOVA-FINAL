@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+<title>COCONOVA | Premium Coconut Products</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
+
+</head>
+
+<body>
+
+    <script>
+    // Open intro before entering the homepage
+    if (!sessionStorage.getItem("coconoveIntroShown")) {
+
+        sessionStorage.setItem(
+            "coconoveIntroShown",
+            "true"
+        );
+
+        window.location.replace("intro.html");
+    }
+</script>
+
+ 
+<!-- ================= NAVBAR ================= -->
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <!-- LOGO -->
+    <a href="index.html" class="logo">
+        <span class="logo-icon">🌴</span>
+        <span>COCONOVA</span>
+    </a>
+
+
+    <!-- MAIN NAVIGATION -->
+    <nav class="nav-links">
+
+        <a href="index.html#home">Home</a>
+
+        <a href="explore-machine.html">
+            Explore Machine
+        </a>
+
+        <a href="shop.html">
+            Products
+        </a>
+
+       <a href="index.html#about">
+    About Us
+</a>
+
+<a href="index.html#team">
+    Our Team
+</a>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <!-- NAV ACTIONS -->
+    <div class="nav-actions">
+
+        <!-- MY ACCOUNT -->
+        <a href="account.html" class="icon-btn account-btn">
+            <i class="fa-solid fa-user"></i>
+        </a>
+
+
+        <!-- CART -->
+        <a href="cart.html" class="icon-btn cart-btn">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span class="cart-count" id="cartCount">
+                0
+            </span>
+
+        </a>
+
+    </div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-tag">
+            🌿 SUSTAINABLE • NATURAL • PREMIUM
+        </p>
+
+        <h1>
+            From Coconut Waste<br>
+            To <span>Sustainable Value.</span>
+        </h1>
+
+        <p class="hero-description">
+            Premium Cocopeat, Natural Coir Fiber and Advanced
+            Coconut Processing Machines for a greener future.
+        </p>
+
+        <div class="hero-buttons">
+
+           <a href="shop.html" class="btn btn-primary">
+    Explore Products
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+<a href="explore-machine.html" class="btn btn-secondary">
+    <i class="fa-solid fa-gears"></i>
+    Explore Machines
+</a>
+        </div>
+
+    </div>
+
+    <div class="hero-scroll">
+        <span>Scroll to Explore</span>
+        <i class="fa-solid fa-arrow-down"></i>
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="intro-section">
+
+    <div class="intro-content">
+
+        <p class="section-tag">WELCOME TO COCONOVA</p>
+
+        <h2>
+            Natural Solutions.<br>
+            Powerful Possibilities.
+        </h2>
+
+        <p>
+            At COCONOVA, we transform coconut resources into
+            high-quality sustainable products. From premium cocopeat
+            and natural coir fiber to advanced extraction machinery,
+            we provide solutions for agriculture and industry.
+        </p>
+
+    </div>
+
+    <div class="stats">
+
+        <div class="stat-card">
+            <h3>100%</h3>
+            <p>Natural Products</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Eco</h3>
+            <p>Friendly Solutions</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Premium</h3>
+            <p>Quality Materials</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     COCONOVA MACHINE SECTION
+========================================= -->
+
+<section class="machine-intro" id="machine">
+
+    <div class="machine-intro-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="machine-intro-content">
+
+            <p class="section-tag">
+                COCONOVA INNOVATION
+            </p>
+
+            <h2>
+                Turn Coconut Husk Into
+                <span>Something Valuable.</span>
+            </h2>
+
+            <p class="machine-description">
+                CocoNova is a compact and affordable coconut husk
+                processing machine designed for small-scale coconut
+                vendors, farmers, and rural communities.
+            </p>
+
+            <p class="machine-description">
+                Instead of throwing away or selling coconut husks at
+                low prices, users can process them into useful
+                <strong>Coir Fibre</strong> and
+                <strong>Cocopeat</strong>.
+            </p>
+
+
+            <!-- FEATURES -->
+
+            <div class="machine-features">
+
+                <div class="machine-feature">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-compress"></i>
+                    </div>
+
+                    <div>
+                        <h4>Compact Design</h4>
+                        <p>Built for small-scale operations with limited space.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="machine-feature">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                    </div>
+
+                    <div>
+                        <h4>Affordable Solution</h4>
+                        <p>An alternative to expensive industrial machines.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="machine-feature">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+
+                    <div>
+                        <h4>Simple Operation</h4>
+                        <p>Designed to reduce manual processing effort.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <a href="explore-machine.html" class="machine-btn">
+
+                Explore The Machine
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+        <!-- RIGHT MACHINE VISUAL -->
+
+        <div class="machine-intro-visual">
+
+            <div class="machine-image-box">
+
+                <img src="machine-main.jpg"
+                     alt="CocoNova Coconut Processing Machine">
+
+            </div>
+
+
+            <!-- FLOATING CARD -->
+
+            <div class="machine-output-card">
+
+                <p>FROM ONE MACHINE</p>
+
+                <div class="output-items">
+
+                    <div>
+                        <i class="fa-solid fa-seedling"></i>
+                        <span>COCOPEAT</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-leaf"></i>
+                        <span>COIR FIBRE</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     HOW IT WORKS
+========================================= -->
+<!-- =========================================
+     HOW THE MACHINE WORKS
+========================================= -->
+
+<section class="machine-process-section">
+
+    <div class="process-heading">
+
+        <p class="section-tag">HOW IT WORKS</p>
+
+        <h2>From Coconut Waste to Valuable Products</h2>
+
+        <p>
+            Transforming coconut husk into useful natural products.
+        </p>
+
+    </div>
+
+
+    <div class="process-flow">
+
+
+        <!-- CARD 1 -->
+
+        <div class="process-card">
+
+            <span class="process-number">01</span>
+
+            <div class="process-image">
+
+                <img src="coconut-husk.jpg"
+                     alt="Coconut Husk">
+
+            </div>
+
+            <div class="process-icon">🥥</div>
+
+            <h3>Coconut Husk</h3>
+
+            <p>
+                Coconut husks are collected instead of being dumped
+                or sold as low-value waste.
+            </p>
+
+        </div>
+
+
+        <!-- ARROW -->
+
+        <div class="process-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+
+        <!-- CARD 2 -->
+
+        <div class="process-card">
+
+            <span class="process-number">02</span>
+
+            <div class="process-image">
+
+                <img src="machine-main.jpg"
+                     alt="Coconut Processing Machine">
+
+            </div>
+
+            <div class="process-icon">⚙️</div>
+
+            <h3>Processing</h3>
+
+            <p>
+                The husk enters the machine for cutting,
+                crushing and separation.
+            </p>
+
+        </div>
+
+
+        <!-- ARROW -->
+
+        <div class="process-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+
+        <!-- CARD 3 -->
+
+        <div class="process-card">
+
+            <span class="process-number">03</span>
+
+            <div class="process-image">
+
+                <img src="cocopeat-block.jpg"
+                     alt="Cocopeat and Coir Fiber">
+
+            </div>
+
+            <div class="process-icon">🌱</div>
+
+            <h3>Useful Output</h3>
+
+            <p>
+                The processed material produces valuable
+                cocopeat and coir fibre.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+<!-- ================= CATEGORIES ================= -->
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories-section" id="categories">
+
+    <div class="section-heading">
+
+        <p class="section-tag">OUR COLLECTION</p>
+
+        <h2>Shop By Category</h2>
+
+        <p>
+            Explore our sustainable coconut-based products
+            and advanced coconut processing machinery.
+        </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+
+        <!-- COCOPEAT -->
+
+        <div class="category-card category-image-card">
+
+            <img src="cocopeat-block.jpg" alt="Premium Cocopeat">
+
+            <div class="category-content">
+
+                <h3>Cocopeat</h3>
+
+                <p>
+                    Premium natural growing medium for
+                    gardening and agriculture.
+                </p>
+
+                <a href="shop.html?category=cocopeat">
+                    Explore
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- COIR FIBER -->
+
+        <div class="category-card category-image-card">
+
+            <img src="coir-fiber.jpg" alt="Natural Coir Fiber">
+
+            <div class="category-content">
+
+                <h3>Coir Fiber</h3>
+
+                <p>
+                    Strong, natural and durable coconut
+                    fiber for multiple applications.
+                </p>
+
+                <a href="shop.html?category=fiber">
+                    Explore
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- MACHINE -->
+
+        <div class="category-card category-image-card">
+
+            <img src="machine-main.jpg"
+                 alt="CocoNova Coconut Processing Machine">
+
+            <div class="category-content">
+
+                <h3>Machines</h3>
+
+                <p>
+                    Advanced coconut processing technology
+                    designed for efficient production.
+                </p>
+
+                <a href="explore-machine.html">
+                    Explore
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- ================= FEATURED PRODUCTS ================= -->
+<!-- ================= FEATURED PRODUCTS ================= -->
+
+<section class="featured-section">
+
+    <div class="section-heading">
+
+        <p class="section-tag">BEST SELLERS</p>
+
+        <h2>Featured Products</h2>
+
+        <p>
+            Explore some of our most popular sustainable
+            coconut-based products.
+        </p>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+        <!-- PRODUCT 1 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img src="cocopeat-block.jpg"
+                     alt="Premium Cocopeat Block">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    COCOPEAT
+                </span>
+
+                <h3>Premium Cocopeat Block</h3>
+
+                <p>
+                    High-quality compressed cocopeat block
+                    for gardening and agriculture.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">₹499</span>
+
+                    <a href="shop.html?category=cocopeat"
+                       class="add-cart">
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img src="coir-fiber.jpg"
+                     alt="Natural Coir Fiber">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    COIR FIBER
+                </span>
+
+                <h3>Natural Coir Fiber</h3>
+
+                <p>
+                    Strong and natural coconut fiber suitable
+                    for industrial and agricultural applications.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">₹799</span>
+
+                    <a href="shop.html?category=fiber"
+                       class="add-cart">
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img src="cocopeat-grow-bag.jpg"
+                     alt="Cocopeat Grow Bag">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    GROW BAG
+                </span>
+
+                <h3>Cocopeat Grow Bag</h3>
+
+                <p>
+                    Ready-to-use cocopeat growing solution
+                    designed for healthy plant development.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">₹599</span>
+
+                    <a href="shop.html?category=cocopeat"
+                       class="add-cart">
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- VIEW ALL BUTTON -->
+
+    <div class="view-all-products">
+
+        <a href="shop.html" class="machine-btn">
+
+            View All Products
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MACHINE GALLERY ================= -->
+
+<section class="machine-gallery-section">
+
+    <div class="section-heading">
+
+        <p class="section-tag">ENGINEERED FOR PERFORMANCE</p>
+
+        <h2>Inside The CocoNova Machine</h2>
+
+        <p>
+            Explore the machine design, processing system,
+            and rotary separation mechanism.
+        </p>
+
+    </div>
+
+
+    <div class="machine-gallery">
+
+
+        <div class="gallery-item gallery-large">
+
+            <img src="machine-main.jpg"
+                 alt="CocoNova Machine">
+
+            <div class="gallery-overlay">
+
+                <span>01</span>
+
+                <h3>CocoNova Processing Machine</h3>
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img src="machine-processing.jpg"
+                 alt="Coconut Processing System">
+
+            <div class="gallery-overlay">
+
+                <span>02</span>
+
+                <h3>Processing System</h3>
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img src="machine-drum.jpg"
+                 alt="Rotary Drum">
+
+            <div class="gallery-overlay">
+
+                <span>03</span>
+
+                <h3>Rotary Drum</h3>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="gallery-button">
+
+        <a href="explore-machine.html" class="machine-btn">
+
+            Explore Machine In Detail
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</section>
+<!-- ================= WHY US ================= -->
+
+<section class="why-section" id="about">
+
+    <div class="why-content">
+
+        <p class="section-tag">WHY COCONOVA?</p>
+
+        <h2>
+            Better For Your Business.<br>
+            Better For The Planet.
+        </h2>
+
+        <p>
+            We believe sustainable materials and modern technology
+            can work together to create a better future.
+        </p>
+
+
+        <div class="why-grid">
+
+            <div class="why-item">
+
+                <div class="why-icon">
+                    🌱
+                </div>
+
+                <div>
+                    <h3>Eco-Friendly</h3>
+                    <p>
+                        Sustainable products made from natural
+                        coconut resources.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="why-item">
+
+                <div class="why-icon">
+                    ⭐
+                </div>
+
+                <div>
+                    <h3>Premium Quality</h3>
+                    <p>
+                        Carefully processed materials with
+                        consistent quality.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="why-item">
+
+                <div class="why-icon">
+                    ⚙️
+                </div>
+
+                <div>
+                    <h3>Modern Technology</h3>
+                    <p>
+                        Advanced machinery designed for
+                        efficient processing.
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     OUR TEAM / FOUNDERS
+===================================================== -->
+
+<section class="team-section" id="team">
+
+    <div class="team-heading">
+
+        <p class="section-tag">
+            THE PEOPLE BEHIND COCONOVA
+        </p>
+
+        <h2>
+            Meet Our <span>Team.</span>
+        </h2>
+
+        <p>
+            COCONOVA is driven by a passionate team combining
+            research, engineering, field experience and market
+            understanding to turn coconut waste into sustainable value.
+        </p>
+
+    </div>
+
+
+    <!-- ================= TEAM GRID ================= -->
+
+  
+
+<div class="team-grid">
+
+    <!-- 01 VENNELA -->
+    <div class="team-card">
+        <div class="team-image">
+            <img src="vennela.jpg" alt="S. Vennela">
+            <div class="team-number">01</div>
+        </div>
+
+        <div class="team-info">
+            <span class="team-role">TEAM LEAD</span>
+            <h3>S. Vennela</h3>
+            <p>
+                Team coordination, project planning, documentation,
+                and ensuring timely completion of project milestones.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- 02 ABHIJITH -->
+    <div class="team-card">
+        <div class="team-image">
+            <img src="abhijith.jpg" alt="G. Abhijith">
+            <div class="team-number">02</div>
+        </div>
+
+        <div class="team-info">
+            <span class="team-role">RESEARCH & VALIDATION LEAD</span>
+            <h3>G. Abhijith</h3>
+            <p>
+                Research, testing, validation, and supporting
+                project development.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- 03 NAVEEN -->
+    <div class="team-card">
+        <div class="team-image">
+            <img src="naveen.jpg" alt="Naveen">
+            <div class="team-number">03</div>
+        </div>
+
+        <div class="team-info">
+            <span class="team-role">DESIGN & TECHNICAL LEAD</span>
+            <h3>Naveen</h3>
+            <p>
+                Machine design, fabrication, testing,
+                and performance improvement.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- 04 HEMALAYA -->
+    <div class="team-card">
+        <div class="team-image">
+            <img src="hemalaya.jpg" alt="V. Hemalaya">
+            <div class="team-number">04</div>
+        </div>
+
+        <div class="team-info">
+            <span class="team-role">MARKET RESEARCH LEAD</span>
+            <h3>V. Hemalaya</h3>
+            <p>
+                Market research, customer analysis, competitor
+                analysis, and identifying market opportunities.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- 05 RUTHIK -->
+    <div class="team-card">
+        <div class="team-image">
+            <img src="ruthik.jpg" alt="S. Sai Ruthik">
+            <div class="team-number">05</div>
+        </div>
+
+        <div class="team-info">
+            <span class="team-role">FIELD TESTING & MARKET ANALYSIS</span>
+            <h3>S. Sai Ruthik</h3>
+            <p>
+                Field testing, market analysis, stakeholder
+                communication, and feedback collection.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+
+    <p class="section-tag">
+        READY TO GO GREEN?
+    </p>
+
+    <h2>
+        Discover Sustainable Coconut Solutions.
+    </h2>
+
+    <a href="#categories" class="btn btn-primary">
+        Shop Now
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+    <div class="footer-grid">
+
+        <div class="footer-brand">
+
+            <h2>🌴 COCONOVA</h2>
+
+            <p>
+                Transforming coconut resources into
+                sustainable products and powerful solutions.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+             <a href="shop.html">Products</a>
+            <a href="#machines">Machines</a>
+            <a href="#about">About Us</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Contact</h3>
+
+            <p>📧  vhran1011@gmail.com/p>
+            <p>📞 +91 8639533425</p>
+            <p>📍 Hyderabad, India</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 COCONOVA. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+ 
+
+</body>
+</html>

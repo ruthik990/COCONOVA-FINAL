@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | COCONOVA</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <section class="auth-page">
+
+
+        <!-- LEFT -->
+
+        <div class="auth-brand">
+
+            <a href="index.html" class="logo">
+                🌴 COCONOVA
+            </a>
+
+            <h1>
+                Welcome<br>
+                Back.
+            </h1>
+
+            <p>
+                Login to manage your orders and explore sustainable
+                coconut products from COCONOVA.
+            </p>
+
+        </div>
+
+
+        <!-- RIGHT -->
+
+        <div class="auth-container">
+
+            <div class="auth-box">
+
+                <h2>Welcome Back</h2>
+
+                <p class="auth-subtitle">
+                    Login to your COCONOVA account.
+                </p>
+
+
+                <div
+                    id="authMessage"
+                    class="auth-message"
+                ></div>
+
+
+                <form
+                    id="loginForm"
+                    class="auth-form"
+                >
+
+
+                    <div class="auth-group">
+
+                        <label>Email Address</label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="auth-group">
+
+                        <label>Password</label>
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="auth-btn"
+                    >
+
+                        Login
+
+                    </button>
+
+
+                </form>
+
+
+                <p class="auth-switch">
+
+                    Don't have an account?
+
+                    <a href="signup.html">
+                        Create Account
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script
+        type="module"
+        src="auth.js"
+    ></script>
+
+</body>
+
+</html>
