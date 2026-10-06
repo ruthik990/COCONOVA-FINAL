@@ -1,67 +1,84 @@
 // ============================================================
-// COCONOVE - FIREBASE CONFIG
+// COCONOVE FIREBASE CONFIGURATION
 // ============================================================
 
-import {
-    initializeApp
-} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+// Firebase App
+import { initializeApp } from "firebase/app";
 
-import {
-    getAnalytics
-} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+// Firebase Authentication
+import { getAuth } from "firebase/auth";
 
-import {
-    getAuth
-} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+// Cloud Firestore
+import { getFirestore } from "firebase/firestore";
 
-import {
-    getFirestore
-} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+// Firebase Storage
+import { getStorage } from "firebase/storage";
+
+// Google Analytics
+import { getAnalytics, isSupported } from "firebase/analytics";
 
 
 // ============================================================
-// CONFIG
+// FIREBASE CONFIG
 // ============================================================
 
 const firebaseConfig = {
-
-    apiKey: "AIzaSyDiSySUw82aTMkLeyC-khhapzRoP2EI5iU",
-
-    authDomain: "coconovs.firebaseapp.com",
-
-    projectId: "coconovs",
-
-    storageBucket: "coconovs.firebasestorage.app",
-
-    messagingSenderId: "950557617874",
-
-    appId: "1:950557617874:web:07105f0d188ef92bad470b",
-
-    measurementId: "G-1CP4ZNXZEM"
-
+    apiKey: "AIzaSyDUMqeeNH4b_udT89v10KrHaEvC5jDUrq0",
+    authDomain: "coconova-7b685.firebaseapp.com",
+    projectId: "coconova-7b685",
+    storageBucket: "coconova-7b685.firebasestorage.app",
+    messagingSenderId: "1074725496904",
+    appId: "1:1074725496904:web:b291f763adfa246ad7107d",
+    measurementId: "G-LMCGZDZ3CN"
 };
 
 
 // ============================================================
-// INITIALIZE
+// INITIALIZE FIREBASE
 // ============================================================
 
 const app = initializeApp(firebaseConfig);
 
-const analytics = getAnalytics(app);
 
+// ============================================================
+// FIREBASE SERVICES
+// ============================================================
+
+// Authentication
 const auth = getAuth(app);
 
+// Firestore Database
 const db = getFirestore(app);
+
+// Storage
+const storage = getStorage(app);
 
 
 // ============================================================
-// EXPORT
+// ANALYTICS
+// ============================================================
+
+let analytics = null;
+
+isSupported()
+    .then((supported) => {
+        if (supported) {
+            analytics = getAnalytics(app);
+        }
+    })
+    .catch((error) => {
+        console.warn("Firebase Analytics unavailable:", error);
+    });
+
+
+// ============================================================
+// EXPORT EVERYTHING
 // ============================================================
 
 export {
     app,
-    analytics,
     auth,
-    db
+    db,
+    storage,
+    analytics
 };
