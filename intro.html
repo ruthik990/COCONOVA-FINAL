@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>COCONOVA</title>
+
+
+    <!-- ==========================================
+         GOOGLE FONTS
+    =========================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ==========================================
+         INTRO CSS
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="intro.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     COCONOVA INTRO
+========================================== -->
+
+<div
+    class="intro-container"
+    id="introScreen"
+>
+
+
+    <!-- ==========================================
+         BACKGROUND
+    =========================================== -->
+
+    <div class="intro-background"></div>
+
+    <div class="overlay"></div>
+
+
+    <!-- ==========================================
+         LOGO
+    =========================================== -->
+
+    <div class="intro-logo">
+
+        <span class="palm">🌴</span>
+
+        <span>COCONOVA</span>
+
+    </div>
+
+
+
+    <!-- ==========================================
+         SLIDES
+    =========================================== -->
+
+    <section class="slides-container">
+
+
+        <!-- ======================================
+             SLIDE 1
+        ======================================= -->
+
+        <div class="intro-slide active">
+
+            <div class="slide-image">
+
+                <img
+                    src="coconut-husk.jpg"
+                    alt="Coconut Husk"
+                >
+
+            </div>
+
+
+            <div class="slide-content">
+
+                <span class="slide-number">
+                    01
+                </span>
+
+                <p class="small-title">
+                    FROM NATURE
+                </p>
+
+                <h1>
+                    Coconut Husk
+                </h1>
+
+                <p>
+                    What was once considered agricultural
+                    waste begins a new journey.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ======================================
+             SLIDE 2
+        ======================================= -->
+
+        <div class="intro-slide">
+
+            <div class="slide-image">
+
+                <img
+                    src="processing-machine.jpg"
+                    alt="Processing Machine"
+                >
+
+            </div>
+
+
+            <div class="slide-content">
+
+                <span class="slide-number">
+                    02
+                </span>
+
+                <p class="small-title">
+                    ADVANCED PROCESSING
+                </p>
+
+                <h1>
+                    Powerful Technology
+                </h1>
+
+                <p>
+                    Coconut husk enters the COCONOVA
+                    processing system for crushing
+                    and separation.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ======================================
+             SLIDE 3
+        ======================================= -->
+
+        <div class="intro-slide">
+
+            <div class="slide-image">
+
+                <img
+                    src="machine-main.jpg"
+                    alt="COCONOVA Machine"
+                >
+
+            </div>
+
+
+            <div class="slide-content">
+
+                <span class="slide-number">
+                    03
+                </span>
+
+                <p class="small-title">
+                    ENGINEERED FOR PERFORMANCE
+                </p>
+
+                <h1>
+                    The COCONOVA Machine
+                </h1>
+
+                <p>
+                    Designed to process green coconut husk
+                    efficiently and transform waste into
+                    valuable natural materials.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ======================================
+             SLIDE 4
+        ======================================= -->
+
+        <div class="intro-slide final-slide">
+
+
+            <div class="final-content">
+
+
+                <span class="small-title">
+                    THE RESULT
+                </span>
+
+
+                <h1>
+                    From Waste<br>
+                    To Value.
+                </h1>
+
+
+                <p>
+                    Premium Cocopeat and Natural Coir Fiber.
+                </p>
+
+
+
+                <!-- ==================================
+                     OUTPUT PRODUCTS
+                =================================== -->
+
+                <div class="outputs">
+
+
+                    <!-- COCOPEAT -->
+
+                    <div class="output-card">
+
+                        <img
+                            src="cocopeat-output.jpg"
+                            alt="Cocopeat"
+                        >
+
+                        <span>
+                            COCOPEAT
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- COIR FIBER -->
+
+                    <div class="output-card">
+
+                        <img
+                            src="coir-fiber.jpg"
+                            alt="Coir Fiber"
+                        >
+
+                        <span>
+                            COIR FIBER
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ==================================
+                     ENTER WEBSITE
+                =================================== -->
+
+              <a
+    href="index.html?intro=done"
+    class="enter-btn"
+    id="enterWebsite"
+>
+
+                    <span>
+                        ENTER COCONOVA
+                    </span>
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==========================================
+         PROGRESS
+    =========================================== -->
+
+    <div class="progress-container">
+
+
+        <div class="progress-bar">
+
+            <span id="progressBar"></span>
+
+        </div>
+
+
+        <div class="progress-text">
+
+            <span
+                class="current-slide"
+                id="currentSlide"
+            >
+                01
+            </span>
+
+            <span>
+                / 04
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ==========================================
+         SKIP INTRO
+    =========================================== -->
+
+    <a
+        href="index.html"
+        class="skip-btn"
+        id="skipIntro"
+    >
+        SKIP INTRO
+    </a>
+
+
+</div>
+
+
+
+<!-- ==========================================
+     INTRO JAVASCRIPT
+========================================== -->
+
+<script src="intro.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Machine | COCONOVA Engineering</title>
+
+    <link rel="stylesheet" href="explore-machine.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     TOP BAR
+========================================================= -->
+
+<header class="machine-header">
+
+    <a href="index.html" class="machine-logo">
+        <span class="logo-mark">🌴</span>
+        <span>
+            <strong>COCONOVA</strong>
+            <small>ENGINEERING</small>
+        </span>
+    </a>
+
+    <a href="index.html" class="home-button">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+    </a>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="machine-hero">
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            <span></span>
+            COCONOVA ENGINEERING
+        </div>
+
+        <h1>
+            Coconut Husk
+            <br>
+            <em>Processing Machine</em>
+        </h1>
+
+        <p>
+            Engineered to transform coconut husk waste into
+            valuable cocopeat and coir fibre through an efficient
+            crushing and separation process.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button class="primary-btn" onclick="scrollToViewer()">
+                <i class="fa-solid fa-cube"></i>
+                Explore Machine
+            </button>
+
+            <button class="secondary-btn" onclick="scrollToProcess()">
+                How It Works
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="hero-badge">
+
+        <div class="badge-icon">
+            <i class="fa-solid fa-leaf"></i>
+        </div>
+
+        <div>
+            <strong>Natural Waste</strong>
+            <span>→ Valuable Products</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MACHINE VIEWER
+========================================================= -->
+
+<section class="viewer-section" id="machineViewer">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-number">01 / MACHINE</span>
+
+            <h2>
+                Explore the
+                <span>Machine</span>
+            </h2>
+        </div>
+
+        <p>
+            View different sides of the COCONOVA processing
+            machine and inspect the major processing components.
+        </p>
+
+    </div>
+
+
+    <div class="machine-viewer">
+
+        <!-- IMAGE AREA -->
+
+        <div class="viewer-image-area">
+
+            <div class="image-glow"></div>
+
+            <img
+                id="machineImage"
+                src="machine-main.jpg"
+                alt="COCONOVA Coconut Husk Processing Machine"
+            >
+
+            <!-- Image loading indicator -->
+
+            <div class="image-loader" id="imageLoader">
+                <div class="loader-circle"></div>
+            </div>
+
+
+            <!-- IMAGE LABEL -->
+
+            <div class="image-label">
+
+                <span class="live-dot"></span>
+
+                <span id="viewLabel">
+                    FRONT VIEW
+                </span>
+
+            </div>
+
+
+            <!-- ZOOM CONTROLS -->
+
+            <div class="viewer-controls">
+
+                <button id="zoomOut" title="Zoom Out">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+
+                <div class="zoom-value" id="zoomValue">
+                    100%
+                </div>
+
+                <button id="zoomIn" title="Zoom In">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+                <button id="resetView" title="Reset">
+                    <i class="fa-solid fa-rotate-left"></i>
+                </button>
+
+                <button id="fullscreenBtn" title="Fullscreen">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+
+            <!-- DRAG HINT -->
+
+            <div class="drag-hint">
+
+                <i class="fa-solid fa-up-down-left-right"></i>
+
+                <span>
+                    Drag to inspect
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- VIEW SELECTION -->
+
+        <div class="view-panel">
+
+            <div class="view-panel-title">
+
+                <span>VIEW MACHINE</span>
+
+                <i class="fa-solid fa-eye"></i>
+
+            </div>
+
+
+            <div class="view-buttons">
+
+                <button
+                    class="view-btn active"
+                    data-image="machine-main.jpg"
+                    data-label="FRONT VIEW"
+                >
+                    <span class="view-icon">
+                        <i class="fa-solid fa-cube"></i>
+                    </span>
+
+                    <span>
+                        <strong>Front</strong>
+                        <small>Main View</small>
+                    </span>
+                </button>
+
+
+                <button
+                    class="view-btn"
+                    data-image="machine-side.jpg"
+                    data-label="SIDE VIEW"
+                >
+                    <span class="view-icon">
+                        <i class="fa-solid fa-arrows-left-right"></i>
+                    </span>
+
+                    <span>
+                        <strong>Side</strong>
+                        <small>Machine Frame</small>
+                    </span>
+                </button>
+
+
+                <button
+                    class="view-btn"
+                    data-image="machine-processing.jpg"
+                    data-label="PROCESSING VIEW"
+                >
+                    <span class="view-icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </span>
+
+                    <span>
+                        <strong>Processing</strong>
+                        <small>Working Area</small>
+                    </span>
+                </button>
+
+
+                <button
+                    class="view-btn"
+                    data-image="machine-drum.jpg"
+                    data-label="ROTARY DRUM"
+                >
+                    <span class="view-icon">
+                        <i class="fa-solid fa-rotate"></i>
+                    </span>
+
+                    <span>
+                        <strong>Rotary Drum</strong>
+                        <small>Separation Unit</small>
+                    </span>
+                </button>
+
+
+                <button
+                    class="view-btn"
+                    data-image="machine-engine.jpg"
+                    data-label="POWER UNIT"
+                >
+                    <span class="view-icon">
+                        <i class="fa-solid fa-engine"></i>
+                    </span>
+
+                    <span>
+                        <strong>Engine</strong>
+                        <small>Power Source</small>
+                    </span>
+                </button>
+
+            </div>
+
+
+            <div class="viewer-tip">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                <p>
+                    Use the controls to zoom into the machine
+                    and switch between different views.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MACHINE INTRO
+========================================================= -->
+
+<section class="machine-intro">
+
+    <div class="intro-number">
+        01
+    </div>
+
+    <div class="intro-content">
+
+        <span class="section-number">
+            ENGINEERED FOR EFFICIENCY
+        </span>
+
+        <h2>
+            From coconut husk
+            <br>
+            to useful products.
+        </h2>
+
+        <p>
+            The COCONOVA machine is designed to process coconut
+            husk through crushing, separation and collection.
+            The system produces two useful outputs:
+            <strong>cocopeat</strong> and <strong>coir fibre</strong>.
+        </p>
+
+    </div>
+
+
+    <div class="intro-stats">
+
+        <div class="stat">
+            <strong>01</strong>
+            <span>Feeding</span>
+        </div>
+
+        <div class="stat">
+            <strong>02</strong>
+            <span>Crushing</span>
+        </div>
+
+        <div class="stat">
+            <strong>03</strong>
+            <span>Separation</span>
+        </div>
+
+        <div class="stat">
+            <strong>04</strong>
+            <span>Collection</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     COMPONENTS
+========================================================= -->
+
+<section class="components-section">
+
+    <div class="section-heading centered">
+
+        <span class="section-number">
+            02 / COMPONENTS
+        </span>
+
+        <h2>
+            Built around
+            <span>performance.</span>
+        </h2>
+
+        <p>
+            Every major section of the machine contributes
+            to the processing cycle.
+        </p>
+
+    </div>
+
+
+    <div class="components-grid">
+
+
+        <!-- ENGINE -->
+
+        <div class="component-card">
+
+            <div class="component-image">
+
+                <img
+                    src="machine-engine.jpg"
+                    alt="Machine engine"
+                >
+
+                <span class="component-number">
+                    01
+                </span>
+
+            </div>
+
+            <div class="component-content">
+
+                <div class="component-icon">
+                    <i class="fa-solid fa-engine"></i>
+                </div>
+
+                <h3>Power Unit</h3>
+
+                <p>
+                    Provides the mechanical power required
+                    to operate the processing system.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CRUSHING -->
+
+        <div class="component-card">
+
+            <div class="component-image">
+
+                <img
+                    src="machine-processing.jpg"
+                    alt="Machine processing unit"
+                >
+
+                <span class="component-number">
+                    02
+                </span>
+
+            </div>
+
+            <div class="component-content">
+
+                <div class="component-icon">
+                    <i class="fa-solid fa-gears"></i>
+                </div>
+
+                <h3>Crushing Unit</h3>
+
+                <p>
+                    The rotating mechanism breaks down the
+                    coconut husk into smaller material.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- DRUM -->
+
+        <div class="component-card">
+
+            <div class="component-image">
+
+                <img
+                    src="machine-drum.jpg"
+                    alt="Rotary drum"
+                >
+
+                <span class="component-number">
+                    03
+                </span>
+
+            </div>
+
+            <div class="component-content">
+
+                <div class="component-icon">
+                    <i class="fa-solid fa-rotate"></i>
+                </div>
+
+                <h3>Rotary Drum</h3>
+
+                <p>
+                    The rotating drum works with the
+                    separation system to classify the material.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- OUTPUT -->
+
+        <div class="component-card">
+
+            <div class="component-image output-image">
+
+                <img
+                    src="machine-main.jpg"
+                    alt="Machine output area"
+                >
+
+                <span class="component-number">
+                    04
+                </span>
+
+            </div>
+
+            <div class="component-content">
+
+                <div class="component-icon">
+                    <i class="fa-solid fa-box-open"></i>
+                </div>
+
+                <h3>Collection System</h3>
+
+                <p>
+                    Processed cocopeat and coir fibre are
+                    discharged separately for collection.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     HOW IT WORKS
+========================================================= -->
+
+<section class="process-section" id="process">
+
+    <div class="process-background"></div>
+
+    <div class="process-inner">
+
+        <div class="section-heading process-heading">
+
+            <span class="section-number">
+                03 / PROCESS
+            </span>
+
+            <h2>
+                How the machine
+                <span>works.</span>
+            </h2>
+
+            <p>
+                A simple processing flow converts coconut
+                husk waste into two valuable natural outputs.
+            </p>
+
+        </div>
+
+
+        <div class="process-flow">
+
+
+            <!-- STEP 1 -->
+
+            <div class="process-step">
+
+                <div class="step-circle">
+                    <span>01</span>
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+
+                <h3>Husk</h3>
+
+                <p>
+                    Coconut husk is manually fed into
+                    the feeding chamber.
+                </p>
+
+            </div>
+
+
+            <div class="flow-line">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+
+            <!-- STEP 2 -->
+
+            <div class="process-step">
+
+                <div class="step-circle">
+                    <span>02</span>
+                    <i class="fa-solid fa-gears"></i>
+                </div>
+
+                <h3>Crushing</h3>
+
+                <p>
+                    Rotating blades crush and break
+                    the coconut husk.
+                </p>
+
+            </div>
+
+
+            <div class="flow-line">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+
+            <!-- STEP 3 -->
+
+            <div class="process-step">
+
+                <div class="step-circle">
+                    <span>03</span>
+                    <i class="fa-solid fa-filter"></i>
+                </div>
+
+                <h3>Separation</h3>
+
+                <p>
+                    The mesh system separates finer
+                    cocopeat from coarser fibre.
+                </p>
+
+            </div>
+
+
+            <div class="flow-line">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+
+            <!-- STEP 4 -->
+
+            <div class="process-step">
+
+                <div class="step-circle">
+                    <span>04</span>
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                </div>
+
+                <h3>Output</h3>
+
+                <p>
+                    Cocopeat and coir fibre are
+                    discharged separately.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- OUTPUTS -->
+
+        <div class="outputs">
+
+            <div class="output-card">
+
+                <div class="output-icon">
+                    🌱
+                </div>
+
+                <div>
+                    <span>OUTPUT 01</span>
+                    <strong>Cocopeat</strong>
+                </div>
+
+            </div>
+
+
+            <div class="output-plus">
+                +
+            </div>
+
+
+            <div class="output-card">
+
+                <div class="output-icon">
+                    🧵
+                </div>
+
+                <div>
+                    <span>OUTPUT 02</span>
+                    <strong>Coir Fibre</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SPECIFICATIONS
+========================================================= -->
+
+<section class="spec-section">
+
+    <div class="spec-left">
+
+        <span class="section-number">
+            04 / ENGINEERING
+        </span>
+
+        <h2>
+            Designed for
+            <span>practical use.</span>
+        </h2>
+
+        <p>
+            The machine concept is designed around a
+            straightforward processing sequence suitable
+            for converting coconut husk waste into useful
+            natural products.
+        </p>
+
+    </div>
+
+
+    <div class="spec-table">
+
+        <div class="spec-row">
+
+            <span>
+                <i class="fa-solid fa-bolt"></i>
+                Power
+            </span>
+
+            <strong>
+                Single Phase
+            </strong>
+
+        </div>
+
+
+        <div class="spec-row">
+
+            <span>
+                <i class="fa-solid fa-gears"></i>
+                Processing
+            </span>
+
+            <strong>
+                Crushing + Separation
+            </strong>
+
+        </div>
+
+
+        <div class="spec-row">
+
+            <span>
+                <i class="fa-solid fa-recycle"></i>
+                Input
+            </span>
+
+            <strong>
+                Green Coconut Husk
+            </strong>
+
+        </div>
+
+
+        <div class="spec-row">
+
+            <span>
+                <i class="fa-solid fa-seedling"></i>
+                Output
+            </span>
+
+            <strong>
+                Cocopeat + Coir Fibre
+            </strong>
+
+        </div>
+
+
+        <div class="spec-row">
+
+            <span>
+                <i class="fa-solid fa-location-dot"></i>
+                Application
+            </span>
+
+            <strong>
+                Rural / Agricultural Use
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     REAL MACHINE GALLERY
+========================================================= -->
+
+<section class="gallery-section">
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-number">
+                05 / REAL MACHINE
+            </span>
+
+            <h2>
+                Built.
+                <span>Tested.</span>
+                Real.
+            </h2>
+
+        </div>
+
+        <p>
+            A closer look at the physical machine and
+            its processing components.
+        </p>
+
+    </div>
+
+
+    <div class="machine-gallery">
+
+        <div class="gallery-main">
+
+            <img
+                src="machine-main.jpg"
+                alt="COCONOVA machine"
+            >
+
+            <div class="gallery-caption">
+                <span>01</span>
+                Main Machine
+            </div>
+
+        </div>
+
+
+        <div class="gallery-small">
+
+            <div>
+
+                <img
+                    src="machine-processing.jpg"
+                    alt="Processing mechanism"
+                >
+
+                <span>Processing Unit</span>
+
+            </div>
+
+
+            <div>
+
+                <img
+                    src="machine-drum.jpg"
+                    alt="Rotary drum"
+                >
+
+                <span>Rotary Drum</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL CTA
+========================================================= -->
+
+<section class="machine-cta">
+
+    <div class="cta-leaf">
+        🌿
+    </div>
+
+    <span>
+        COCONOVA ENGINEERING
+    </span>
+
+    <h2>
+        Turning coconut waste
+        <br>
+        into <em>value.</em>
+    </h2>
+
+    <p>
+        Natural products. Powerful solutions.
+    </p>
+
+    <a href="index.html" class="cta-button">
+        <i class="fa-solid fa-house"></i>
+        Back to COCONOVA
+    </a>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="machine-footer">
+
+    <div>
+
+        <strong>🌴 COCONOVA</strong>
+
+        <p>
+            Sustainable solutions for coconut processing.
+        </p>
+
+    </div>
+
+    <span>
+        © 2026 COCONOVA. All Rights Reserved.
+    </span>
+
+</footer>
+
+
+<script src="explore-machine.js"></script>
+
+</body>
+</html>

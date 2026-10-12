@@ -1,0 +1,200 @@
+/* ===============================
+   AUTH PAGES
+================================ */
+
+.auth-page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #f7f3eb;
+}
+
+
+/* LEFT SIDE */
+
+.auth-brand {
+    background: #3d5a40;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 10%;
+}
+
+
+.auth-brand .logo {
+    color: #d8b26e;
+    margin-bottom: 50px;
+}
+
+
+.auth-brand h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 55px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+
+.auth-brand p {
+    color: #dce6d6;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+
+/* RIGHT SIDE */
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+
+.auth-box {
+    width: 100%;
+    max-width: 450px;
+}
+
+
+.auth-box h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    color: #3d5a40;
+    margin-bottom: 10px;
+}
+
+
+.auth-subtitle {
+    color: #6a5a4d;
+    margin-bottom: 35px;
+    font-size: 14px;
+}
+
+
+/* FORM */
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.auth-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.auth-group label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #4b3b30;
+}
+
+
+.auth-group input {
+    padding: 14px;
+    border: 1px solid #d8cdbd;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    background: white;
+}
+
+
+.auth-group input:focus {
+    border-color: #3d5a40;
+}
+
+
+/* BUTTON */
+
+.auth-btn {
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    background: #3d5a40;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.auth-btn:hover {
+    background: #7a4e2d;
+}
+
+
+.auth-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* LINKS */
+
+.auth-switch {
+    text-align: center;
+    margin-top: 25px;
+    color: #6a5a4d;
+    font-size: 13px;
+}
+
+
+.auth-switch a {
+    color: #7a4e2d;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/* MESSAGE */
+
+.auth-message {
+    padding: 12px;
+    display: none;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+
+.auth-message.error {
+    display: block;
+    background: #fce8e6;
+    color: #a33b32;
+}
+
+
+.auth-message.success {
+    display: block;
+    background: #e4f2e5;
+    color: #2f6b3b;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .auth-page {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-brand {
+        display: none;
+    }
+
+    .auth-container {
+        min-height: 100vh;
+        padding: 30px 7%;
+    }
+
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Account | COCONOVA</title>
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="account.css"
+    >
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- FONT AWESOME -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+
+            🌴 COCONOVA
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="shop.html">Shop</a>
+
+            <a href="shop.html?category=machines">
+                Machines
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+
+            <!-- CART -->
+
+            <a
+                href="cart.html"
+                class="icon-btn cart-btn"
+            >
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span class="cart-count">
+                    0
+                </span>
+
+            </a>
+
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= ACCOUNT ================= -->
+
+    <section class="account-section">
+
+
+        <div class="account-container">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="account-header">
+
+                <p class="section-tag">
+
+                    MY ACCOUNT
+
+                </p>
+
+
+                <h1>
+
+                    Welcome Back,
+                    <span id="userName">
+                        Customer
+                    </span>
+
+                </h1>
+
+            </div>
+
+
+            <div class="account-grid">
+
+
+                <!-- ================= PROFILE ================= -->
+
+                <div class="profile-card">
+
+
+                    <div class="profile-icon">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+
+                    <h2>
+
+                        My Profile
+
+                    </h2>
+
+
+                    <div class="profile-info">
+
+
+                        <div class="profile-row">
+
+                            <span>Name</span>
+
+                            <strong id="profileName">
+
+                                Loading...
+
+                            </strong>
+
+                        </div>
+
+
+                        <div class="profile-row">
+
+                            <span>Email</span>
+
+                            <strong id="profileEmail">
+
+                                Loading...
+
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <button
+                        id="logoutBtn"
+                        class="logout-btn"
+                    >
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        Logout
+
+                    </button>
+
+
+                </div>
+
+
+                <!-- ================= ORDERS ================= -->
+
+                <div class="orders-card">
+
+
+                    <div class="orders-header">
+
+                        <div>
+
+                            <p class="section-tag">
+
+                                PURCHASE HISTORY
+
+                            </p>
+
+
+                            <h2>
+
+                                My Orders
+
+                            </h2>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-box"></i>
+
+                    </div>
+
+
+                    <!-- ORDERS LOAD HERE -->
+
+                    <div
+                        id="ordersContainer"
+                        class="orders-container"
+                    >
+
+                        <p class="loading-orders">
+
+                            Loading your orders...
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 COCONOVA.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script
+        type="module"
+        src="account.js"
+    ></script>
+
+
+</body>
+
+</html>

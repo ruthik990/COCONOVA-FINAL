@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | COCONOVA</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            🌴 COCONOVA
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="shop.html?category=machines">Machines</a>
+            <a href="index.html#about">About</a>
+
+        </nav>
+
+
+       <div class="nav-actions">
+
+    <a href="account.html" class="icon-btn account-btn">
+        <i class="fa-solid fa-user"></i>
+    </a>
+
+    <a href="cart.html" class="icon-btn cart-btn">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span class="cart-count">0</span>
+
+    </a>
+
+</div>
+
+    </header>
+
+
+
+    <!-- ================= CART ================= -->
+
+    <section class="cart-section">
+
+        <div class="cart-container">
+
+
+            <div class="cart-header">
+
+                <p class="section-tag">YOUR SHOPPING BAG</p>
+
+                <h1>Shopping Cart</h1>
+
+            </div>
+
+
+
+            <div class="cart-layout">
+
+
+                <!-- CART ITEMS -->
+
+                <div class="cart-items">
+
+                    <div id="cartItems">
+
+                        <!-- JavaScript loads items here -->
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ORDER SUMMARY -->
+
+                <div class="cart-summary">
+
+                    <h2>Order Summary</h2>
+
+
+                    <div class="summary-row">
+
+                        <span>Subtotal</span>
+
+                        <span id="subtotal">₹0</span>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>Shipping</span>
+
+                        <span id="shipping">₹0</span>
+
+                    </div>
+
+
+                    <div class="summary-total">
+
+                        <span>Total</span>
+
+                        <span id="total">₹0</span>
+
+                    </div>
+
+
+                    <button
+                        class="checkout-btn"
+                        id="checkoutBtn"
+                    >
+
+                        Proceed to Checkout
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <a
+                        href="shop.html"
+                        class="continue-shopping"
+                    >
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        Continue Shopping
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-bottom">
+
+            <p>© 2026 COCONOVA. All Rights Reserved.</p>
+
+        </div>
+
+    </footer>
+
+
+  <script type="module" src="cart.js"></script>
+
+</body>
+
+</html>

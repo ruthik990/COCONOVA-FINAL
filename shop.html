@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop | COCONOVA</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            🌴 COCONOVA
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="active">Shop</a>
+            <a href="shop.html?category=machines">Machines</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+      <div class="nav-actions">
+
+    <a href="account.html" class="icon-btn account-btn">
+        <i class="fa-solid fa-user"></i>
+    </a>
+
+    <a href="cart.html" class="icon-btn cart-btn">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span class="cart-count">0</span>
+
+    </a>
+
+</div>
+
+    </header>
+
+
+    <!-- SHOP HERO -->
+
+    <section class="shop-hero">
+
+        <p class="section-tag">COCONOVA COLLECTION</p>
+
+        <h1>Natural Products.<br>Powerful Solutions.</h1>
+
+        <p>
+            Explore premium cocopeat, natural coir fiber,
+            and advanced coconut processing machines.
+        </p>
+
+    </section>
+
+
+    <!-- FILTERS -->
+
+    <section class="shop-section">
+
+        <div class="shop-top">
+
+            <h2>Our Products</h2>
+
+            <div class="filters">
+
+                <button class="filter-btn active" data-category="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-category="cocopeat">
+                    Cocopeat
+                </button>
+
+                <button class="filter-btn" data-category="fiber">
+                    Coir Fiber
+                </button>
+
+                <button class="filter-btn" data-category="machines">
+                    Machines
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCTS -->
+
+        <div class="shop-products" id="shopProducts">
+
+            <!-- JavaScript will load products here -->
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="footer-bottom">
+            <p>© 2026 COCONOVA. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="shop.js"></script>
+
+</body>
+</html>
